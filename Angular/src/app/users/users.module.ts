@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsersPage } from './users/users.page';
 import { RouterModule, Routes } from '@angular/router';
+import { MatTableModule } from '@angular/material/table'
 
 const routes: Routes = [
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     HttpClientModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatTableModule
   ]
 })
 export class UsersModule { }

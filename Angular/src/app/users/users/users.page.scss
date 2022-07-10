@@ -1,0 +1,34 @@
+.cont {
+    color: antiquewhite;
+    position: relative;
+top: -1038px;
+left: 20rem;
+width: 75%;
+box-shadow: 23px 23px 48px #7b1fa2;
+
+}
+h1 {
+    color: white;
+    margin-left: 4rem;
+    padding-top: 3rem;
+    cursor:context-menu;
+  }
+  
+  table {
+    background-color: black;
+    margin: 4rem;
+    width: 80%;
+    text-align: center;
+  
+    th, td {
+      color: white;
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    .mat-row:hover .mat-cell {
+      border-color: #bcb0d1;
+      box-shadow: 13px 13px 48px #7b1fa2;
+
+    }
+  }

@@ -11,6 +11,7 @@ export class UsersPage implements OnInit {
 
   users: IAuthData[] = [];
   error = undefined;
+  colonne: string[] = ['id', 'firstname', 'lastname', 'email'];
 
   constructor(private authService: AuthService, private http: HttpClient) { }
 
