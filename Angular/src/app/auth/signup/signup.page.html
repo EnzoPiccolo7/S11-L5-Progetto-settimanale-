@@ -1,24 +1,37 @@
-<div class="box-container">
-  <h1 class="m-5 text-center">Signup Page</h1>
+<div class="box-container" >
+  <h1>Signup Page</h1>
+  
   <form #f="ngForm" (ngSubmit)="onSubmit()">
     <div class="mb-3">
-      <label for="firstname" class="form-label">Firstname</label>
-      <input type="text" ngModel name="firstname" class="form-control" id="firstname">
+      <mat-form-field appearance="outline">
+        <mat-label>Firstname</mat-label>
+        <input matInput ngModel name="firstname" class="form-control" id="firstname" placeholder="ex.John" required>
+      </mat-form-field>
     </div>
     <div class="mb-3">
-      <label for="lastname" class="form-label">Lastname</label>
-      <input type="text" ngModel name="lastname" class="form-control" id="lastname">
+           
+      <mat-form-field appearance="outline">
+        <mat-label>Lastname</mat-label>
+        <input matInput ngModel name="lasttname" class="form-control" id="lasttname" placeholder="ex.Smith" required>
+      </mat-form-field>
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" ngModel name="email" class="form-control" id="email">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput ngModel name="email" class="form-control" id="email" placeholder="ex.example@example.com" required>
+      </mat-form-field>
+    </div>          
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>New Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" ngModel name="password" class="form-control" id="password" required>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
     </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Password</label>
-      <input type="password" ngModel name="password" class="form-control" id="password">
-    </div>
-    <div class="mb-3 mt-5">
-      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    <div >
+      <button class="botton" type="submit">Registrati</button>
     </div>
   </form>
   <div class="alert alert-danger" role="alert" *ngIf="error">

@@ -8,6 +8,7 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./signup.page.scss']
 })
 export class SignupPage implements OnInit {
+  hide = true;
 
   @ViewChild('f') form!: NgForm;
   error = undefined;

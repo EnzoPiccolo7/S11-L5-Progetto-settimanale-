@@ -4,6 +4,9 @@ import { LoginPage } from './login/login.page';
 import { SignupPage } from './signup/signup.page';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatIconModule} from '@angular/material/icon'; 
 
 
 
@@ -15,7 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+        MatInputModule,
+        MatIconModule
   ]
 })
 export class AuthModule { }

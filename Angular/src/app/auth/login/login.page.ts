@@ -7,8 +7,9 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss']
 })
-export class LoginPage implements OnInit {
 
+export class LoginPage implements OnInit {
+  hide = true
   @ViewChild('f') form!: NgForm;
   error = undefined;
 
@@ -30,6 +31,8 @@ export class LoginPage implements OnInit {
       err  => {
         console.log(err.error);
         this.error = err.error;
+        
+    
       }
     )
   }

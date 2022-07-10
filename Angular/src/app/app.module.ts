@@ -11,6 +11,9 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {  MatMenuModule} from '@angular/material/menu'; 
 import {MatButtonModule} from '@angular/material/button'; 
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon'; 
 /* import { UsersModule } from './users/users.module'; */
 /* import { Err404Module } from './err404/err404.module'; */
 
@@ -28,8 +31,11 @@ import {MatButtonModule} from '@angular/material/button';
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
-    /* UsersModule, */
+    MatButtonModule,
+    MatFormFieldModule,
+    NoopAnimationsModule,
+    MatIconModule
+            /* UsersModule, */
     /* Err404Module */
   ],
   providers: [],
